@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunrise Sunset Dashboard</title>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Sunrise and Sunset Times</h1>
+    </header>
+
+    <main>
+        <section id="location-controls">
+            <button id="use-geolocation">Use Current Location</button>
+            <input type="text" id="location-search" placeholder="Enter location">
+            <button id="search-location">Search</button>
+        </section>
+
+        <section id="sun-data">
+            <h2>Sunrise and Sunset Information</h2>
+            <div id="today-info">
+                <h3>Today</h3>
+                <p>Sunrise: <span id="today-sunrise">Loading...</span></p>
+                <p>Sunset: <span id="today-sunset">Loading...</span></p>
+                <p>Dawn: <span id="today-dawn">Loading...</span></p>
+                <p>Dusk: <span id="today-dusk">Loading...</span></p>
+                <p>Day Length: <span id="today-daylength">Loading...</span></p>
+                <p>Solar Noon: <span id="today-solarnoon">Loading...</span></p>
+                <p>Time Zone: <span id="today-timezone">Loading...</span></p>
+            </div>
+            <div id="tomorrow-info">
+                <h3>Tomorrow</h3>
+                <p>Sunrise: <span id="tomorrow-sunrise">Loading...</span></p>
+                <p>Sunset: <span id="tomorrow-sunset">Loading...</span></p>
+                <p>Dawn: <span id="tomorrow-dawn">Loading...</span></p>
+                <p>Dusk: <span id="tomorrow-dusk">Loading...</span></p>
+                <p>Day Length: <span id="tomorrow-daylength">TimeZone</span></p>
+                <p>Solar Noon: <span id="tomorrow-solarnoon">TimeZone</span></p>
+                <p>Time Zone: <span id="tomorrow-timezone">Timezone</span></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Data provided by <a href="https://sunrisesunset.io/api/">Sunrise-Sunset API</a></p>
+    </footer>
+
+    <!-- Link to external JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
